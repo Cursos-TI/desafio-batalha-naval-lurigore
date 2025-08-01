@@ -29,11 +29,21 @@ int main() {
         tabuleiro[i][7] = 3;
     }
 
+    for(int i = 0; i < tamanhoNavio; i++)
+    {
+        tabuleiro[i+5][i+2] = 3;
+    }
+    for(int i = 0; i < tamanhoNavio; i++)
+    {
+        tabuleiro[i+1][i+6] = 3;
+    }
+
+    printf("--- Tabuleiro Batalha Naval ---\n");
     for(int i = 0; i < 10; i++)
     {
         for(int j = 0; j < 10; j++)
         {
-            printf("%d ", tabuleiro[i][j]);
+            printf("%d|", tabuleiro[i][j]);
         }
         printf("\n");
     }
