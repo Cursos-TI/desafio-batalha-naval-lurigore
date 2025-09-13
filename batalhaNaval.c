@@ -95,7 +95,7 @@ int main() {
         }
         for(int j = inicio; j < tamanho; j++)
         {
-            tabuleiro[i + yOfset][j + xOfset] = 7;
+            tabuleiro[i + yOfset][j + xOfset] = 5;
         }
         printf("%d", final);
         for(int j = final; j < tamanho; j++)
